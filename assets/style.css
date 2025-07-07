@@ -259,7 +259,8 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  padding: 0px 20px;
+  width: auto;
 }
 
 #myAwesomeLightbox img {
@@ -267,7 +268,6 @@ input[type="submit"] {
   max-height: 70vh;
   object-fit: contain;
 }
-
 
 @media all and (max-width: 1180px) {
 	.picture {
