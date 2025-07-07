@@ -2,7 +2,25 @@
 <html lang="fr">
 <head>
 	<title>Nina Carducci - Photographe professionnelle à Bordeaux</title>
-	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci vous accompagne pour vos portraits, mariages et événements. Joignable au 05 56 67 78 89 du lundi au vendredi, de 10h–19h. Contactez-moi !">
+	<meta name="description" content="Photographe professionnelle à Bordeaux, Nina Carducci vous accompagne pour vos portraits, mariages et événements. Joignable au 05 56 67 78 89 du lundi au vendredi, de 10h–19h. Studio au 68 avenue Alsace-Lorraine, 33200 Bordeaux">
+	<!-- Open Graph pour Facebook / Instagram -->
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux" />
+	<meta property="og:description" content="Photographe à Bordeaux spécialisée dans les portraits, mariages et événements. Studio au 68 avenue Alsace-Lorraine. Contact : 05 56 67 78 89." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://loukys.github.io/Projet4_Nina-Carducci-Dev/" />
+	<meta property="og:image" content="https://loukys.github.io/Projet4_Nina-Carducci-Dev/assets/images/nina.webp" />
+	<meta property="og:locale" content="fr_FR" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux" />
+	<meta name="twitter:description" content="Portraits, mariages, événements à Bordeaux. Studio photo professionnel. Contactez Nina Carducci." />
+	<meta name="twitter:image" content="https://loukys.github.io/Projet4_Nina-Carducci-Dev/assets/images/nina.webp" />
+	<meta name="twitter:site" content="@ninacarducci" />
+
+	<!-- Auteur du contenu -->
+	<meta name="author" content="Nina Carducci, photographe à Bordeaux">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -14,12 +32,51 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+
+	<script type="application/ld+json">
+	{
+	  	"@context": "https://schema.org",
+		"@type": "Photograph",
+		"name": "Nina Carducci",
+		"image": "https://loukys.github.io/Projet4_Nina-Carducci-Dev/assets/images/nina.webp",
+		"description": "Photographe professionnelle à Bordeaux. Portraits, mariages, entreprises, événements. Studio situé au 68 avenue Alsace-Lorraine.",
+		"url": "https://loukys.github.io/Projet4_Nina-Carducci-Dev/",
+		"telephone": "+33556677889",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.841225,
+			"longitude": -0.580036
+		},
+		"openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday"
+			],
+			"opens": "10:00",
+			"closes": "19:00"
+		},
+		"sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		]
+	}
+	</script>
 </head>
 
 <body>
 	<header>
 		<div class="top-header">
-			<h1 class="name">Nina Carducci</h1>
+			<h1 class="name">Nina Carducci - Photographe professionnelle à Bordeaux</h1>
 			<nav class="nav">   
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -70,6 +127,7 @@
 				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+				<p>Je vous accueille dans mon studio au 68 avenue Alsace-Lorraine à Bordeaux, pour travailler ensemble sur vos projets.</p>
 			</div>
 		</article>
 
@@ -99,7 +157,7 @@
 		</article>
 
 		<article id="services">
-			<h2 class="title">Mes services</h2>
+			<h2 class="title">Mes services de photographe professionnelle</h2>
 			<div class="container">
 				<section class="service">
 					<div class="service__description">
@@ -148,8 +206,8 @@
 		<div id="contact">
 			<div class="container">
 				<div class="form-container">
-					<h2>Une question ? Une demande de devis ?</h2>
-					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+					<h2>Une question ? Une demande de devis pour un shooting ?</h2>
+					<p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
 						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom">
@@ -159,6 +217,7 @@
 						<textarea name="message" id="message" cols="30" rows="10"></textarea>
 						<input type="submit" value="Envoyer"/>
 					</form>
+					<span>Ou contactez moi au 05 56 67 78 89, du lundi au vendredi, de 10h à 19h.</span>
 				</div>
 				<div class="picture right">
 					<img src="./assets/images/camera.webp" alt="Cliché d'un appareil photo par Nina Carducci">
