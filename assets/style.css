@@ -105,7 +105,8 @@ body {
 
 .title{
 	text-align: center;
-	padding-block: 2em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
 .gallery .nav {
@@ -267,8 +268,13 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+#NumbTel {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-/*** ajustement du visionnage des images dans la modale ***/
+/*** ajustement du visuel des images dans la modale ***/
 #myAwesomeLightbox .modal-dialog {
 	display: flex;
 	justify-content: center;
@@ -285,16 +291,19 @@ input[type="submit"] {
 	width: auto;
 }
 
+.gallery-item {
+	cursor: pointer;
+}
+
 #myAwesomeLightbox img {
 	max-width: 70vw;
 	max-height: 70vh;
 	object-fit: contain;
 }
 
-a {
-  color: #004080;
-  font-weight: bold;
-  text-decoration: underline;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: 4rem;
+	height: 4rem;
 }
 
 @media all and (max-width: 1180px) {
